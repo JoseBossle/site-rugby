@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugby School Club - V2 Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/overall.css">
+    
+    
+</head>
+<body class="bg-slate-50">
+
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-display italic text-blue-700 tracking-tighter">RUGBY.SCHOOL</a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 font-semibold text-slate-700">
+                    <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                    <a href="#news" class="hover:text-blue-600 transition">Notícias</a>
+                    <a href="#coaches" class="hover:text-blue-600 transition">Treinadores</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Participar</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-700 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pb-6 space-y-4 text-center font-bold text-slate-800 border-t border-slate-100">
+                <a href="#home" class="block pt-4">Home</a>
+                <a href="#news" class="block">Notícias</a>
+                <a href="#coaches" class="block">Treinadores</a>
+                <a href="#contact" class="block text-blue-600">Participar Agora</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=2000" class="w-full h-full object-cover grayscale-[20%]" alt="Rugby Background">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-slate-900/60"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <span class="text-blue-400 font-bold uppercase tracking-[0.3em] text-sm mb-4 block">Bem-vindo ao Elite Club</span>
+            <h1 class="text-5xl md:text-8xl font-display italic text-white leading-tight uppercase">
+                FORÇA. HONRA. <span class="text-blue-500">RUGBY.</span>
+            </h1>
+            <p class="text-slate-200 text-lg md:text-xl mt-6 mb-10 max-w-2xl mx-auto">
+                Transformamos jovens atletas em lendas através da disciplina e técnica profissional.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#news" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-blue-700 transition-all transform hover:scale-105">Ver Notícias</a>
+                <a href="#coaches" class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-xl font-bold hover:bg-white/20 transition-all">Nossos Treinadores</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="coaches" class="py-24 bg-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-display italic text-slate-900 uppercase">Nossos Treinadores</h2>
+                    <div class="h-2 w-24 bg-blue-600 mt-2"></div>
+                </div>
+                <p class="text-slate-500 max-w-md mt-4 md:mt-0 italic">Liderados por profissionais certificados internacionalmente.</p>
+            </div>
+
+            <div class="swiper coachSwiper pb-12">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="group relative bg-slate-200 rounded-[2.5rem] overflow-hidden aspect-[4/5]">
+                            <img src="assets/img/trainner-01.jpg" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-70"></div>
+                            <div class="absolute bottom-8 left-8 text-white">
+                                <h3 class="text-2xl font-display italic uppercase">Roberto Evans</h3>
+                                <p class="text-blue-400 font-bold tracking-widest text-xs uppercase mt-1">Supervisor técnico</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group relative bg-slate-200 rounded-[2.5rem] overflow-hidden aspect-[4/5]">
+                            <img src="assets/img/trainnee-02.jpg" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-70"></div>
+                            <div class="absolute bottom-8 left-8 text-white">
+                                <h3 class="text-2xl font-display italic uppercase">Samuel Johnson</h3>
+                                <p class="text-blue-400 font-bold tracking-widest text-xs uppercase mt-1"> Técnico</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group relative bg-slate-200 rounded-[2.5rem] overflow-hidden aspect-[4/5]">
+                            <img src="assets/img/trainnee-03.jpg" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-70"></div>
+                            <div class="absolute bottom-8 left-8 text-white">
+                                <h3 class="text-2xl font-display italic uppercase">Marcos kully</h3>
+                                <p class="text-blue-400 font-bold tracking-widest text-xs uppercase mt-1">Preparador Físico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination !-bottom-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="assets/js/menu-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+@charset "utf-8";
+ body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Montserrat', sans-serif; }
+        .swiper-pagination-bullet-active { background: #2563eb !important; }
